@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital@0;1&family=Dela+Gothic+One&family=DotGothic16&family=Kalnia:wght@700&display=swap');
+
+:root {
+    --font-display: 'Dela Gothic One';
+    --font-content: 'Arimo';
+    --font-pixel: 'DotGothic16';
+    --font-display-2: 'Kalnia';
+    --color-primary: #F23005;
+    --color-dark: rgb(13, 13, 13);
+    --color-white: #F2F2F2;
+    --color-white-rgba-100: rgba(242, 242, 242, 1);
+    --color-white-rgba-0: rgba(242, 242, 242, 0);
+    --color-dark-rgba-100: rgba(13, 13, 13, 1);
+    --color-dark-rgba-0: rgba(13, 13, 13, 0);
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: var(--color-white);
+}
+
+body {
+    font-family: var(--font-content), var(--font-content), 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-display);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+figure {
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+button {
+    margin: auto;
+    display: flex;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid var(--color-dark);
+    background-color: var(--color-white);
+    font-family: 'Belanosima', sans-serif;
+    cursor: pointer;
+    align-items: center;
+    justify-content: left;
+}
+
+.color-fill-1 {
+    position: absolute;
+    margin-left: -7px;
+    width: 2px;
+    height: 50px;
+    background-color: var(--color-primary);
+    visibility: hidden;
+}
+
+button:hover .color-fill-1 {
+    visibility: visible;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+button p {
+    margin: auto;
+    z-index: 10;
+}
+
+nav {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    /* background: linear-gradient(rgba(255,255,255,1) 50%, rgba(255,255,255,0)); */
+    background: linear-gradient(var(--color-white-rgba-0) 50%, var(--color-white-rgba-100));
+    /* background: transparent; */
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+}
+
+#nav-title {
+    box-sizing: border-box;
+    width: 100%;
+    height: max-content;
+    margin: auto;
+    max-width: 1440px;
+
+    font-size: 9vw;
+    white-space: nowrap;
+    line-height: 0.5em;
+    padding-top: 1em;
+    /* padding-top: 6vw; */
+    padding-left: 5vw;
+    padding-right: 5vw;
+    /* padding-bottom: 5vw; */
+    transition: 0.1s;
+}
+
+#nav-title.nav-resize {
+    font-size: 2vh;
+    transition: 0.3s;
+}
+
+#nav-caption,
+section,
+.footer-wrapper {
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+section {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+main {
+    margin-top: 12vw;
+    padding-top: 5vh;
+    transition: transform 0.25s;
+    will-change: transform;
+}
+
+footer {
+    color: var(--color-white);
+    background-color: var(--color-dark);
+    width: 100%;
+}
+
+.footer-wrapper {
+    /* text-align: center; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2vw; */
+}
+
+.portfo-programming button {
+    margin: 5vh 0;
+}
+
+.portfo-programming,
+.contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 2vw;
+    padding: 5vh 0;
+}
+
+.portfo-programming {
+    min-height: 40vh;
+    justify-content: space-around;
+}
+
+.contact {
+    min-height: 5vh;
+}
+
+.contact a {
+    color: var(--color-white);
+    text-decoration: underline;
+}
+
+.font-pixel {
+    font-family: var(--font-pixel);
+}
+
+@media (min-width: 768px) {
+
+    /* Maximum size */
+    main,
+    .footer-wrapper {
+        max-width: 1440px;
+        margin: auto;
+    }
+
+    #nav-title {
+        font-size: min(7vw, 110px);
+        /* font-size: 7vw; */
+    }
+
+    main {
+        margin-top: min(10vw, 160px)
+    }
+
+    .portfo-programming,
+    .contact {
+        text-align: left;
+    }
+
+    .contact {
+        justify-content: space-between;
+    }
+}
