@@ -32,7 +32,7 @@
                 <p>Some banner ads for social media platforms.</p>
                 
                 <p><strong>Role:</strong><br/>
-                    Illustration</p>
+                    Illustration, Animation</p>
             </div>
             
         </header>
@@ -43,19 +43,16 @@
         <div class="work-images" data-aos="fade-up" data-aos-delay="400">
 
             <ul>
-                <li data-aos="fade-up"><img src="./images/bannerad/other-1.png" class="img-responsive"/></li>
-                <li data-aos="fade-up"><img src="./images/bannerad/other-2.png" class="img-responsive"/></li>
+                <li data-aos="fade-up" class="img-responsive section-2" style="background-color: #0e303c;">
+                    <img src="./images/bannerad/other-1.png"/>
+                    <video src="./images/bannerad/other-2.mp4" type="video/mp4" poster="./images/bannerad/other-2-preview.png" autoplay loop></video>
+                </li>
+                
                 <li data-aos="fade-up"><img src="./images/bannerad/other-3.png" class="img-responsive"/></li>
                 <li data-aos="fade-up"><img src="./images/bannerad/other-4.png" class="img-responsive"/></li>
-                <!-- <li data-aos="fade-up"><img src="./images/bannerad/other-5.png" class="img-responsive"/></li>
+                <li data-aos="fade-up"><img src="./images/bannerad/other-5.png" class="img-responsive"/></li>
                 <li data-aos="fade-up"><img src="./images/bannerad/other-6.png" class="img-responsive"/></li>
                 <li data-aos="fade-up"><img src="./images/bannerad/other-7.png" class="img-responsive"/></li>
-                <li data-aos="fade-up"><img src="./images/bannerad/other-8.png" class="img-responsive"/></li>
-                <li data-aos="fade-up"><img src="./images/bannerad/other-9.png" class="img-responsive"/></li> -->
-                <li data-aos="fade-up"><img src="./images/bannerad/other-11.png" class="img-responsive"/></li>
-                <li data-aos="fade-up"><img src="./images/bannerad/other-12.png" class="img-responsive"/></li>
-                <!-- <li data-aos="fade-up"><img src="./images/bannerad/other-10.gif" class="img-responsive"/></li> -->
-                
             </ul>
 
         </div>
@@ -78,5 +75,20 @@
 <script src="./sources/effects/aos.js"></script>
 <script>
     AOS.init();
+</script>
+
+<script>
+    var promise = document.querySelector('video').play();
+
+    if (promise !== undefined) {
+    promise.then(_ => {
+        console.log("Auto-play");
+    }).catch(error => {
+        // Autoplay was prevented.
+        let videoTag = document.querySelector('video');
+        videoTag.setAttribute('controls',true);
+    });
+    }
+    
 </script>
 </html>
