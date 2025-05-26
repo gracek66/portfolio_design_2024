@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo:ital@0;1&family=Dela+Gothic+One&family=DotGothic16&family=Kalnia:wght@700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap');
+
+
+
 :root {
     --font-display: 'Dela Gothic One';
     --font-content: 'Arimo';
@@ -8,6 +13,7 @@
     --color-primary: #F23005;
     --color-dark: rgb(13, 13, 13);
     --color-white: #F2F2F2;
+    --color-grey: #DDD;
     --color-white-rgba-100: rgba(242, 242, 242, 1);
     --color-white-rgba-0: rgba(242, 242, 242, 0);
     --color-dark-rgba-100: rgba(13, 13, 13, 1);
@@ -21,6 +27,11 @@ html {
 
 body {
     font-family: var(--font-content), var(--font-content), 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    max-width: 1920px;
+    margin: auto;
 }
 
 h1,
@@ -95,6 +106,8 @@ nav {
     /* background: transparent; */
     -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
+
+    box-shadow: 0 4px 4px var(--color-white-rgba-100);
 }
 
 #nav-title {

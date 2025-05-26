@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grace Kwong Portfolio</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/details-long.css">
+    <link rel="stylesheet" href="./styles/aos.css">
+    <link rel="stylesheet" href="./photoswipe/dist/photoswipe.css">
+
+
+</head>
+
+<body id="detail">
+
+    <nav>
+        <a href="./index.html">
+            <div id="nav-title" class="filled-text nav-resize" data-aos="zoom-out-left">GRACE KWONG</div>
+        </a>
+    </nav>
+
+
+    <main>
+
+        <header class="wd-90">
+            <div class="banner" data-aos="zoom-out"></div>
+
+            <div data-aos="fade-up" data-aos-delay="200">
+                <h1 class="pj-name">Hollywood Baccarat Hotfix</h1>
+                <span style="border: 1px solid var(--color-dark); padding: 0.2rem 1rem; border-radius: 20px;">
+                    NDA Project
+                </span>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="400" class="pj-intro">
+                <div>
+                    <h4>Company</h4>
+                    <p>Derivco</p>
+                </div>
+                <div>
+                    <h4>My Role</h4>
+                    <p>UX Designer</p>
+                </div>
+                <div>
+                    <h4>Scope</h4>
+                    <p>1 week</p>
+                </div>
+            </div>
+        </header>
+
+        <section class="section-layer-1 wd-m" data-aos="fade-up" data-aos-delay="400">
+            <h2>Background</h2>
+            <p>To keep our gaming experience fresh and engaging, we’re exploring a shift from our traditional live
+                casino offerings by integrating a fast-paced, user-friendly RNG game with cinematic-grade visuals and
+                immersive design.</p>
+            <p>The goal is to elevate player engagement and retention through a more dynamic and visually compelling
+                user experience.</p>
+        </section>
+
+        <section class="section-layer-1 wd-m" data-aos="fade-up" data-aos-delay="400">
+            <h2>What is Hollyhood Baccarat?</h2>
+            <p>Hollywood Baccarat provides a premium casino experience with Hollywood-level visuals alongside Random
+                Number Generation(RNG) gameplay, creating a truly cinematic, captivating and fair gaming experience.</p>
+            <figure class="attach-img-m pswp-gallery">
+                <a href="./images/hollywood/hollywood_001.png" data-pswp-width="1024"
+                    data-pswp-height="576" target="_blank">
+                    <img src="./images/hollywood/hollywood_001.png" alt="">
+                </a>
+                <!-- <figcaption>Lorem ipsum dolor sit amet.</figcaption> -->
+            </figure>
+        </section>
+
+        <section class="section-layer-1 wd-m">
+            <h2 data-aos="fade-up" data-aos-delay="400">Initial Problem</h2>
+            <figure class="quotation" data-aos="fade-up" data-aos-delay="400">
+                <blockquote>
+                    After looking at the background data, something seems a little off. The new game we released not
+                    long ago doesn't seem to be performing as well as we expected
+                    <figcaption>- Business Team 🙍‍♂</figcaption>
+                </blockquote>
+            </figure>
+
+            <ul>
+                <li style="--list-emoji: '⬇️';" data-aos="fade-up" data-aos-delay="400">
+                    <h3>Active User</h3>
+                    <p>User activity gradually declined in the first week</p>
+                </li>
+
+                <li style="--list-emoji: '⬇️';" data-aos="fade-up" data-aos-delay="400">
+                    <h3>D1 vs D7 Retention</h3>
+                    <p>The Active user and Retention Rate of new games on D1 (Day 1) dropped significantly compared to
+                        the Active user and Retention Rate of new games on D7 (Day 7)</p>
+                </li>
+
+                <li style="--list-emoji: '⬇️';" data-aos="fade-up" data-aos-delay="400">
+                    <h3>D1 vs D7 Bet Amount</h3>
+                    <p>The total payment amount of new games on D1 (first day) is slightly lower than the total payment
+                        amount of new games on D7 (seventh day)</p>
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="section-layer-1 wd-m">
+            <h2 data-aos="fade-up" data-aos-delay="400">Investigation</h2>
+            <ul>
+                <li data-aos="fade-up" data-aos-delay="400">
+                    <h3>Quantitative Research</h3>
+                    <p>As the game wasn’t performing as well as expected. So, we teamed up with the data team to dig
+                        deeper.</p>
+                    <div class="table-data table-c3r4">
+                        <div>Platform Data</div>
+
+                        <div></div>
+                        <div>Desktop</div>
+                        <div>Mobile</div>
+
+                        <div>D1 vs D7 Retention</div>
+                        <div>Normal</div>
+                        <div><strong>Drop sharply</strong></div>
+
+                        <div>D1 vs D7 Bet Amount</div>
+                        <div>Normal</div>
+                        <div><strong>Low consistenyly</strong></div>
+                    </div>
+
+                    <p>We started by comparing performance across platforms:</p>
+                    <p>
+                        Desktop version:<br>
+                        Both Day 1 and Day 7 retention and total bet amount were healthy.
+                    </p>
+                    <p>
+                        Mobile version: <br>
+                        Retention dropped sharply from Day 1 to Day 7;<br>
+                        Total bet amount stayed consistently low.
+                    </p>
+                    <p><strong>Somethings went wrong in the mobile version.</strong> This pattern was not just a
+                        one-off, it was happening across the board on mobile.</p>
+
+                    <br>
+
+                    <p>To understand what was going on, we broke down the mobile data by country. </p>
+
+                    <div class="table-data table-c3r4">
+                        <div>Platform Data in Mobile</div>
+
+                        <div></div>
+                        <div>High-income countries</div>
+                        <div>Low-income countries</div>
+
+                        <div>D1 vs D7 Retention</div>
+                        <div>Low</div>
+                        <div><strong>Very Low</strong></div>
+
+                        <div>D1 vs D7 Bet Amount</div>
+                        <div>Low</div>
+                        <div><strong>Very Low</strong></div>
+                    </div>
+
+                    <p>
+                        The problem wasn’t limited to one region, most countries had low retention and low bet amount in
+                        mobile version. <strong>But it was even worse in low-income countries. </strong>
+                    </p>
+                </li>
+
+                <li data-aos="fade-up" data-aos-delay="400">
+                    <br>
+                    <h3>Our Hypothesis</h3>
+                    <p>Given these patterns, we suspect that the issue may be tied to <strong>device quality</strong> or
+                        <strong>network performance</strong>, especially since mobile users in low-income regions are
+                        more likely to face limitations in retention and total bet amount.
+                    </p>
+                </li>
+
+                <li data-aos="fade-up" data-aos-delay="400">
+                    <br>
+                    <h3>Proof</h3>
+                    <p>To understand the problem, our team added trackers to the game.</p>
+                    <p>The results showed that many players on mobile devices couldn’t watch the videos because they
+                        wouldn’t load. The main reason is that the video quality was too high for their devices or
+                        internet speed. This helped us see why some players dropped off.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section-layer-1 wd-m">
+            <h2 data-aos="fade-up" data-aos-delay="400">Solutions</h2>
+            <div class="flex flex-wrap align-self-center gallery-cols-2">
+                <ul data-aos="fade-up" data-aos-delay="400">
+                    <span class="gallery-option">option 1</span>
+                    <li style="--list-emoji: '👑';">
+                        <h3>Change Video Quality</h3>
+                        <p>A pop-up message prompts users to adjust the video quality and lower the resolution, ensuring smooth playback.</p>
+                    </li>
+                </ul>
+
+                <figure class="pswp-gallery" data-aos="fade-up" data-aos-delay="400">
+                    <a href="./images/hollywood/hollywood_002.jpeg" data-pswp-width="1440"
+                    data-pswp-height="1024" target="_blank">
+                        <img src="./images/hollywood/hollywood_002.jpeg" alt="">
+                    </a>
+                    <!-- <figcaption>Lorem ipsum dolor sit amet.</figcaption> -->
+                </figure>
+            </div>
+
+
+            <div class="flex flex-wrap align-self-center gallery-cols-2">
+                <ul data-aos="fade-up" data-aos-delay="400">
+                    <span class="gallery-option">option 2</span>
+                    <li style="--list-emoji: '👑';">
+                        <h3>Loading Spinner</h3>
+                        <p>A loading spinner designed in a similar style to the game, uses repetitive loading animations to reduce the perception of wait time.</p>
+                    </li>
+                </ul>
+
+                <figure class="pswp-gallery" id="trytry" data-aos="fade-up" data-aos-delay="400">
+                    <a href="./images/hollywood/hollywood_003.jpeg" data-pswp-width="1440"
+                    data-pswp-height="1024" target="_blank">
+                        <img src="./images/hollywood/hollywood_003.jpeg" alt="">
+                    </a>
+                    <!-- <figcaption>Lorem ipsum dolor sit amet.</figcaption> -->
+                </figure>
+            </div>
+
+            <div class="flex flex-wrap align-self-center gallery-cols-2">
+                <ul data-aos="fade-up" data-aos-delay="400">
+                    <span class="gallery-option">option 3 [Backlog]</span>
+                    <li style="--list-emoji: '📦';">
+                        <h3>2D Virtual Dealer</h3>
+                        <p>Users can switch from high-quality videos to a virtual character, which require less data, allowing for faster loading and playback, maintaining the smoothness and playability of the game.</p>
+                    </li>
+                </ul>
+
+                <figure class="pswp-gallery" data-aos="fade-up" data-aos-delay="400">
+                    <a href="./images/hollywood/hollywood_004.jpeg" data-pswp-width="1440"
+                    data-pswp-height="1024" target="_blank">
+                        <img src="./images/hollywood/hollywood_004.jpeg" alt="">
+                    </a>
+                    <!-- <figcaption>Lorem ipsum dolor sit amet.</figcaption> -->
+                </figure>
+            </div>
+        </section>
+
+
+        <section class="section-layer-1 wd-m">
+            <h2 data-aos="fade-up" data-aos-delay="400">Final Outcome</h2>
+        </section>
+        <figure class="pswp-gallery" data-aos="fade-up" data-aos-delay="400">
+            <a href="./images/hollywood/hollywood_005.jpeg" data-pswp-width="4420"
+                    data-pswp-height="1024" target="_blank">
+                        <img src="./images/hollywood/hollywood_005.jpeg" alt="">
+                    </a>
+        </figure>
+
+
+        <section class="section-layer-1 wd-m" data-aos="fade-up" data-aos-delay="400">
+            <h2>Metrics</h2>
+            <p>One week after the relaunch, active users, retention, and conversions all improved significantly.</p>
+            <p>This confirmed that our UX fixes were driving real impact.</p>
+        </section>
+
+
+        <section class="section-layer-1 wd-m" data-aos="fade-up" data-aos-delay="400">
+            <h2>Takeaway</h2>
+            <p>
+                Technical issues don’t always show up at first glance but user behavior does. By combining data analysis with UX thinking, we uncovered a hidden barrier: high video quality was blocking access for users on low-end devices. Through thoughtful loading screen design and adaptive solutions, we turned frustration into engagement. And prove that small UX changes can drive big results.
+            </p>
+        </section>
+
+    </main>
+
+    <a class="btn" href="./index.html">HOME</a>
+
+    <section class="cta">
+
+        <h2>Are you interested in this project?</h2>
+        <a class="btn btn-dark" href="mailto:grace.kwong.job@gmail.com" title="e-mail">
+            FIND OUT MORE
+        </a>
+
+    </section>
+</body>
+<!-- JavaScript -->
+<script src="./sources/script.js"></script>
+<script src="./sources/effects/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+<!-- Gallery -->
+
+<script type="module">
+    import PhotoSwipeLightbox from './photoswipe/dist/photoswipe-lightbox.esm.js';
+
+    const options = {
+        gallery: '.pswp-gallery',
+        children: 'a',
+        pswpModule: () => import('./photoswipe/dist/photoswipe.esm.js')
+    }
+
+    const lightbox = new PhotoSwipeLightbox(options);
+    
+    lightbox.init();
+    
+    console.log("Called PhotoSwipe!");
+</script>
+
+
+
+
+</html>

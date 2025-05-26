@@ -178,6 +178,9 @@
 .feature-projects-wrapper .feature-thumb-13 {
     background-image: url('../images/home-images/image-13.png');
 }
+.feature-projects-wrapper .feature-thumb-14 {
+    background-image: url('../images/home-images/image-14.png');
+}
 
 .feature-projects-wrapper figcaption {
     font-family: var(--font-display);
