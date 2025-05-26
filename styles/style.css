@@ -10,12 +10,12 @@
     --font-content: 'Arimo';
     --font-pixel: 'DotGothic16';
     --font-display-2: 'Kalnia';
-    --color-primary: #F23005;
+    /* --color-primary: #F23005; */
     --color-dark: rgb(13, 13, 13);
     --color-white: #F2F2F2;
     --color-grey: #DDD;
     --color-white-rgba-100: rgba(242, 242, 242, 1);
-    --color-white-rgba-0: rgba(242, 242, 242, 0);
+    --color-white-rgba-0: rgba(242, 242, 242, 0.3);
     --color-dark-rgba-100: rgba(13, 13, 13, 1);
     --color-dark-rgba-0: rgba(13, 13, 13, 0);
 }

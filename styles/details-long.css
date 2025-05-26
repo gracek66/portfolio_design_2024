@@ -99,10 +99,25 @@ figcaption {
 }
 
 blockquote{
-    font-size: 1.125rem;
-    line-height: 1.5rem;
+    font-size: 1.125em;
+    line-height: 1.5em;
     font-weight: bold;
     font-style: italic;
+}
+
+blockquote::after{
+    content: "\201C";
+    font-family: var(--font-display);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 3px black;
+    opacity: 0.2;
+
+    position: absolute;
+    right: 5%;
+    bottom: 20%;
 }
 
 .quotation{
@@ -118,6 +133,15 @@ blockquote{
     padding-right: 0;
     font-style: normal;
     font-weight: 400;    
+}
+
+.hypothesis{
+    text-align: center;
+    color: var(--color-white);
+    background-color: var(--color-dark);
+    padding: 1.5em;
+    margin-top: 4em;
+    border-radius: 10px;
 }
 
 /* Header */
@@ -323,6 +347,10 @@ a.btn-dark{
 }
 
 @media (max-width: 575.98px) {
+    .quotation{
+        margin: 2rem 0;
+    }
+    
     /* General */
     #detail .wd-m{
         width: 90%;
